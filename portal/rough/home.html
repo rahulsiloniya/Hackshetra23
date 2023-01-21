@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css" type="text/css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">NIT Student Portal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience.html">Experiences</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Technical Clubs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Technobyte</a></li>
+                  <li><a class="dropdown-item" href="#">Embedded Systems and Robitics</a></li>
+                  <li><a class="dropdown-item" href="#">ICell</a></li>
+                  <li><a class="dropdown-item" href="#">Antrakrish</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cultutral CLubs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">HLAD</a></li>
+                  <li><a class="dropdown-item" href="#">ELAD</a></li>
+                  <li><a class="dropdown-item" href="#">MAD</a></li>
+                  <li><a class="dropdown-item" href="#">F.A.M</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sports.html">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="post.html" tabindex="-1" aria-disabled="true">Personal</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <h1 style=color:red align="center" class="animation">Welcome to NIT Student Portal</h1>
+    <main>
+      <section class="heroSection">
+        <div class="heroSectionDetails">
+        <img src="https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg" alt="Error 404" width="250px" height="250px">
+          <h1>Student_User</h1>
+          <h3 class="designation">Student at NIT Kurukshetra</h3>
+        </div>
+      </section>
+      <section class="aboutme" id="aboutme">
+
+      </section>
+      <section class="skillsAndProjects">
+        <div class="skills" id="skills">
+          <h1 class="cardHeading">Grades</h1>
+          <ul>
+            <li><a href="semester1.html" target="_blank">Semester 1</a></li>
+            <li><a href="semester2.html" target="_blank">Semester 2</a></li>
+            <li><a href="semester3.html" target="_blank">Semester 3</a></li>
+            <li><a href="semester4.html" target="_blank">Semester 4</a></li>
+            <li><a href="semester5.html" target="_blank">Semester 5</a></li>
+            <li><a href="semester6.html" target="_blank">Semester 6</a></li>
+            <li><a href="semester7.html" target="_blank">Semester 7</a></li>
+            <li><a href="semester8.html" target="_blank">Semester 8</a></li>
+          </ul>
+        </div>
+        <div class="projects" id="projects">
+          <h1 class="cardHeading">Assignment</h1>
+          <ul>
+            <li><a href="assignment1.html" target="_blank">Assignment 1</li>
+            <li><a href="assignment2.html" target="_blank">Assignment 2</li>
+            <li><a href="assignment3.html" target="_blank">Assignment 3</li>
+          </ul>
+        </div>
+      </section>
+      <section class="contactForm" id="contactForm">
+        <h1>Let's Connect!</h1>
+        <div class="formGroup">
+          <label for="name">Enter Full Name</label><br />
+          <input type="text" name="name" id="name" placeholder="Full Name" />
+        </div>
+        <div class="formGroup">
+          <label for="email">Email</label><br />
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="formGroup">
+          <label for="message">Message</label><br />
+          <textarea
+            placeholder="Send some message!"
+            name="w3review"
+            id="message"
+            cols="50"
+            rows="4"
+          ></textarea>
+        </div>
+        <button class="submitButton" onclick="{submit()}">Connect</button>
+      </section>
+      <!--Footer-->
+      <footer class="footer">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <img src="Facebook_f_logo_(2021).svg.png" width="50px" height="50px" style="padding: 2px;">
+            <!--Twitter-->
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" width="50px" height="50px" style="padding: 2px; width:fit-content">
+            <!--Intagram-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" width="50px" height="50px" style="padding: 2px; width:fit-content">
+            <!--Linkedin-->
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="50px" height="50px" style="padding: 2px; width:fit-content">
+      
+          </section>
+          <!-- Section: Social media -->
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="home">  
+                <a href="index.html" class="text-white" style="margin-left:60px; padding:60px">Home</a>
+                <a href="Post.html" class="text-white" style="margin-left:85px; padding:60px">Blog</a>
+                <a href="#!" class="text-white" style="margin-left:105px; padding:60px">About</a>
+                <a href="#!" class="text-white" style="margin-left:130px; padding:60px">Contact Me</a>
+              </div>
+              <!--Grid column-->
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/" style="width: 500px;">HRK's.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </main>
+    <script src="script.js"></script>
+
+        <!-- Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+  </body>
+</html>

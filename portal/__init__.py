@@ -4,7 +4,8 @@ import os
 def create_app(test_config=None):
     app=Flask('__name__',
                 instance_relative_config=True, 
-                template_folder='portal/templates')
+                template_folder='portal/templates',
+                static_folder='portal/static')
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'portal.sqlite')
@@ -29,6 +30,9 @@ def create_app(test_config=None):
 
     from . import auth
     app.register_blueprint(auth.bp)
+
+    from . import blog
+    app.register_blueprint(blog.bp)
 
     app.add_url_rule("/", endpoint="auth.index")
 
