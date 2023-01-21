@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+    {% block title %}NIT Kurukshetra{% endblock %}
+
+
+{% block header %}
+   
+{% endblock %}
+
+{% block content %}
+
+    {% if g.user['username'] %}
+    <h1>You have landed!</h1>
+    <p>
+        Hello, {{ g.user['username'] }}<br/>
+        Welcome back!
+    </p>
+    {% else %}
+    <h1>Hi there!</h1>
+    <p>Please login or register</p>
+    {% endif %}
+    
+{% endblock %}
