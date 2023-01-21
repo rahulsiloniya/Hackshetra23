@@ -60,7 +60,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return render_template('auth/index.html') # redirect(url_for('auth.index'))  # should be index page
+            return redirect(url_for('auth.index'))  # should be index page
 
         flash(error)
     return render_template("auth/login.html")
@@ -69,7 +69,6 @@ def login():
 """this is index page temp"""
 @bp.route('/')
 def index():
-    logout()
     return render_template('auth/index.html')
 
 # index temp closes
